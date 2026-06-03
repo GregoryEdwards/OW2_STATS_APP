@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Mercy">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d76e"/>
+      <stop offset="100%" stop-color="#b89a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#g)"/>
+  <circle cx="160" cy="128" r="68" fill="#ffffff" opacity="0.14"/>
+  <text x="160" y="150" font-family="Inter, system-ui, sans-serif" font-size="96" font-weight="700" fill="#ffffff" text-anchor="middle">M</text>
+  <text x="160" y="250" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="600" fill="#ffffff" opacity="0.92" text-anchor="middle">Mercy</text>
+</svg>

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-ow-dark text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-ow-border bg-ow-panel;
+  }
+  .stat-label {
+    @apply text-xs font-medium uppercase tracking-wide text-slate-400;
+  }
+}
