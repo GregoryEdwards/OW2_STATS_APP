@@ -32,6 +32,7 @@ export const zenyatta: SupportHero = {
       kind: 'weapon',
       description: 'Fires orbs of energy. Hold to charge and release a volley of several orbs.',
       damage: 48,
+      dps: 60,
       dataConfidence: 'approximate',
     },
     {

@@ -22,8 +22,8 @@ export const kiriko: SupportHero = {
 
   healing: {
     primaryType: 'projectile',
-    peakHps: 65,
-    notes: 'Healing Ofuda are homing healing talismans. Kunai deal high single-target burst with a headshot multiplier.',
+    peakHps: 70,
+    notes: 'Healing Ofuda are homing healing talismans (~70/s sustained). Kunai deal high single-target burst with a headshot multiplier.',
   },
 
   abilities: [
@@ -32,6 +32,7 @@ export const kiriko: SupportHero = {
       kind: 'weapon',
       description: 'Throws kunai that deal high damage and critical headshot damage.',
       damage: 45,
+      dps: 90,
       dataConfidence: 'approximate',
     },
     {
@@ -39,6 +40,7 @@ export const kiriko: SupportHero = {
       kind: 'secondary-fire',
       description: 'Sends a volley of homing talismans that heal an ally.',
       healing: 65,
+      hps: 70,
       healingType: 'projectile',
       dataConfidence: 'approximate',
     },

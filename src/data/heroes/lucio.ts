@@ -32,6 +32,7 @@ export const lucio: SupportHero = {
       kind: 'weapon',
       description: 'Fires sound projectiles. Alternate fire knocks back enemies in front of Lúcio.',
       damage: 20,
+      dps: 80,
       dataConfidence: 'confirmed',
     },
     {

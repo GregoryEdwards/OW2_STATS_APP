@@ -32,6 +32,7 @@ export const baptiste: SupportHero = {
       kind: 'weapon',
       description: 'Three-round burst rifle (damage). Alternate fire lobs healing projectiles to allies.',
       damage: 25,
+      dps: 75,
       dataConfidence: 'confirmed',
     },
     {

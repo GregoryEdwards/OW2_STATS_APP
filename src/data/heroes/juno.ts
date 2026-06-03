@@ -16,14 +16,15 @@ export const juno: SupportHero = {
     damage: 13,
     fireRate: 5,
     dps: 65,
+    hps: 45,
     magazine: 80,
     reload: 1.2,
   },
 
   healing: {
     primaryType: 'beam',
-    peakHps: 65,
-    notes: 'Mediblaster auto-locks healing onto allies in the reticle. Pulsar Torpedoes add lock-on burst healing.',
+    peakHps: 45,
+    notes: 'Mediblaster auto-locks healing onto allies in the reticle (~45/s). Pulsar Torpedoes add lock-on burst healing.',
   },
 
   abilities: [
@@ -32,7 +33,9 @@ export const juno: SupportHero = {
       kind: 'weapon',
       description: 'Rapid-fire blaster that damages enemies and heals allies it is aimed at.',
       damage: 13,
+      dps: 65,
       healing: 9,
+      hps: 45,
       healingType: 'beam',
       dataConfidence: 'approximate',
     },

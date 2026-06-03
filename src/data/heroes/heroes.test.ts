@@ -47,5 +47,23 @@ describe('hero roster data integrity', () => {
       expect(ults).toHaveLength(1);
       expect(ults[0].name).toBe(hero.ultimate.name);
     });
+
+    it('keeps weapon-ability per-second values consistent with the weapon block', () => {
+      const weaponAbility = hero.abilities.find((a) => a.kind === 'weapon');
+      if (weaponAbility?.dps !== undefined) {
+        expect(weaponAbility.dps).toBeCloseTo(hero.weapon.dps, 2);
+      }
+      if (weaponAbility?.hps !== undefined) {
+        expect(weaponAbility.hps).toBeCloseTo(hero.weapon.hps ?? NaN, 2);
+      }
+    });
+
+    it('has non-negative per-second values on every ability', () => {
+      for (const a of hero.abilities) {
+        if (a.dps !== undefined) expect(a.dps).toBeGreaterThanOrEqual(0);
+        if (a.hps !== undefined) expect(a.hps).toBeGreaterThanOrEqual(0);
+      }
+      if (hero.weapon.hps !== undefined) expect(hero.weapon.hps).toBeGreaterThanOrEqual(0);
+    });
   });
 });

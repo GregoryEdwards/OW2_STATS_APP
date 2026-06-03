@@ -77,6 +77,8 @@ export interface Weapon {
   fireRate: number;
   /** Derived = damage * fireRate (precomputed for display; verified by tests). */
   dps: number;
+  /** Healing per second the weapon outputs on allies, if it heals. */
+  hps?: number;
   /** Magazine size; undefined for beam/ammo-less weapons. */
   magazine?: number;
   /** Reload time in seconds. */

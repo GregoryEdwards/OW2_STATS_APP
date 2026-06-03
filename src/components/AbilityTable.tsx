@@ -22,8 +22,18 @@ export function AbilityTable({ abilities }: { abilities: Ability[] }) {
             <th className="py-2 pr-3 font-medium">Ability</th>
             <th className="py-2 pr-3 font-medium">Type</th>
             <th className="py-2 pr-3 text-right font-medium">CD</th>
-            <th className="py-2 pr-3 text-right font-medium">Dmg</th>
-            <th className="py-2 pr-3 text-right font-medium">Heal</th>
+            <th className="py-2 pr-3 text-right font-medium" title="Damage per hit / cast">
+              Dmg
+            </th>
+            <th className="py-2 pr-3 text-right font-medium" title="Damage per second">
+              DPS
+            </th>
+            <th className="py-2 pr-3 text-right font-medium" title="Healing per hit / cast">
+              Heal
+            </th>
+            <th className="py-2 pr-3 text-right font-medium" title="Healing per second">
+              HPS
+            </th>
             <th className="py-2 text-right font-medium">Dur</th>
           </tr>
         </thead>
@@ -41,11 +51,13 @@ export function AbilityTable({ abilities }: { abilities: Ability[] }) {
               <td className="py-2 pr-3 text-right tabular-nums text-slate-300">
                 {num(a.cooldown, 's')}
               </td>
+              <td className="py-2 pr-3 text-right tabular-nums text-slate-300">{num(a.damage)}</td>
               <td className="py-2 pr-3 text-right tabular-nums text-slate-300">
-                {a.dps !== undefined ? `${a.dps}/s` : num(a.damage)}
+                {num(a.dps, '/s')}
               </td>
+              <td className="py-2 pr-3 text-right tabular-nums text-slate-300">{num(a.healing)}</td>
               <td className="py-2 pr-3 text-right tabular-nums text-slate-300">
-                {a.hps !== undefined ? `${a.hps}/s` : num(a.healing)}
+                {num(a.hps, '/s')}
               </td>
               <td className="py-2 text-right tabular-nums text-slate-300">{num(a.duration, 's')}</td>
             </tr>

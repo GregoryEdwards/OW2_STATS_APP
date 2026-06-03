@@ -31,6 +31,7 @@ export const brigitte: SupportHero = {
       kind: 'weapon',
       description: 'Long-reach melee flail that strikes enemies in front of Brigitte.',
       damage: 35,
+      dps: 35,
       dataConfidence: 'confirmed',
     },
     {

@@ -16,6 +16,7 @@ export const mercy: SupportHero = {
     damage: 20,
     fireRate: 4.5,
     dps: 90,
+    hps: 55,
     magazine: 20,
     reload: 1.4,
   },

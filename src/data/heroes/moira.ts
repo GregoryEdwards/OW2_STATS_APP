@@ -16,6 +16,7 @@ export const moira: SupportHero = {
     damage: 50,
     fireRate: 1,
     dps: 50,
+    hps: 70,
   },
 
   healing: {
@@ -30,6 +31,7 @@ export const moira: SupportHero = {
       kind: 'weapon',
       description: 'Primary fire heals allies in a short-range cone (uses biotic energy). Secondary fire is a lock-on damage beam that restores energy.',
       damage: 50,
+      dps: 50,
       hps: 70,
       healingType: 'beam',
       dataConfidence: 'approximate',

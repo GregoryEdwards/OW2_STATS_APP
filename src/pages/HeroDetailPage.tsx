@@ -79,8 +79,12 @@ export function HeroDetailPage() {
           items={[
             { label: 'Damage', value: hero.weapon.damage },
             { label: 'Fire rate', value: `${hero.weapon.fireRate}/s` },
-            { label: 'DPS', value: hero.weapon.dps },
-            { label: 'Peak HPS', value: hero.healing.peakHps },
+            { label: 'DPS', value: `${hero.weapon.dps}/s` },
+            {
+              label: 'Weapon HPS',
+              value: hero.weapon.hps !== undefined ? `${hero.weapon.hps}/s` : '—',
+            },
+            { label: 'Peak HPS', value: `${hero.healing.peakHps}/s` },
           ]}
         />
         <StatBlock

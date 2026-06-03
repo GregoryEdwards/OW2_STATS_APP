@@ -16,14 +16,15 @@ export const illari: SupportHero = {
     damage: 65,
     fireRate: 1.3,
     dps: 84.5,
+    hps: 78,
     magazine: 16,
     reload: 1.4,
   },
 
   healing: {
     primaryType: 'over-time',
-    peakHps: 75,
-    notes: 'Healing Pylon auto-heals nearby allies. Solar Rifle alt-fire is a charged healing beam.',
+    peakHps: 78,
+    notes: 'Solar Rifle alt-fire is a charged healing beam (~78/s). Healing Pylon auto-heals nearby allies for 30/s.',
   },
 
   abilities: [
@@ -32,7 +33,8 @@ export const illari: SupportHero = {
       kind: 'weapon',
       description: 'Primary fire is a charged damaging shot. Alternate fire heals allies with a beam.',
       damage: 65,
-      healing: 26,
+      dps: 84.5,
+      hps: 78,
       healingType: 'beam',
       dataConfidence: 'approximate',
     },
