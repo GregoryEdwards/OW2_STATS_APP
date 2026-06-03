@@ -20,6 +20,7 @@ const makeHero = (overrides: Partial<SupportHero> = {}): SupportHero => ({
     { name: 'Ult', kind: 'ultimate', description: '', ultCost: 1500 },
   ],
   ultimate: { name: 'Ult', cost: 1500, effect: '' },
+  strategies: [],
   ...overrides,
 });
 

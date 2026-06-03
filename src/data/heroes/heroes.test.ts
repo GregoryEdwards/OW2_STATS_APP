@@ -58,6 +58,15 @@ describe('hero roster data integrity', () => {
       }
     });
 
+    it('has at least two strategies, each with a valid category', () => {
+      expect(hero.strategies.length).toBeGreaterThanOrEqual(2);
+      for (const s of hero.strategies) {
+        expect(s.title.length).toBeGreaterThan(0);
+        expect(s.detail.length).toBeGreaterThan(0);
+        expect(['healing', 'damage', 'utility']).toContain(s.category);
+      }
+    });
+
     it('has non-negative per-second values on every ability', () => {
       for (const a of hero.abilities) {
         if (a.dps !== undefined) expect(a.dps).toBeGreaterThanOrEqual(0);

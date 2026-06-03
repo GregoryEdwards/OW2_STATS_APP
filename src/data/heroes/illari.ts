@@ -69,4 +69,25 @@ export const illari: SupportHero = {
     cost: 1700,
     effect: 'Damages and slows enemies in an area, marking them to explode when they take additional damage.',
   },
+
+  strategies: [
+    {
+      title: 'Hide the Pylon on walls/ceilings',
+      detail:
+        'Place Healing Pylon overlooking the fight but out of enemy sightlines (high ledges, ceilings) so it keeps auto-healing without being destroyed.',
+      category: 'healing',
+    },
+    {
+      title: 'Captive Sun + grouping ults',
+      detail:
+        'The mark chains into an explosion — fire Captive Sun into Graviton Surge, Terra Surge or Ramattra’s Annihilation, where the slow keeps enemies clumped.',
+      category: 'damage',
+    },
+    {
+      title: 'Burst-heal, then recharge on damage',
+      detail:
+        'Fire the healing beam in short bursts to pull allies back from death, then rebuild it by landing rifle shots. Use Outburst to peel or reposition.',
+      category: 'utility',
+    },
+  ],
 };

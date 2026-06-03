@@ -83,4 +83,25 @@ export const brigitte: SupportHero = {
     duration: 10,
     effect: 'Move faster and grant nearby allies stacking armor that persists after the ability ends.',
   },
+
+  strategies: [
+    {
+      title: 'Bash → Whip Shot → flail',
+      detail:
+        'At close range, Shield Bash into Whip Shot into flail swings bursts squishies while triggering Inspire team healing.',
+      category: 'damage',
+    },
+    {
+      title: 'Whip Shot to sustain Inspire',
+      detail:
+        'Weaving Whip Shot into melee keeps Inspire’s healing-over-time rolling for the whole team (extended further with the Morale Boost perk).',
+      category: 'healing',
+    },
+    {
+      title: 'Rally before you engage',
+      detail:
+        'Pop Rally entering a fight, not mid-fight — the overhealth armor gives your team a health advantage and can soak an enemy burst ult.',
+      category: 'utility',
+    },
+  ],
 };

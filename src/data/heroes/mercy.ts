@@ -74,4 +74,25 @@ export const mercy: SupportHero = {
     duration: 15,
     effect: 'Enables flight and extends staff beams to chain across all nearby allies.',
   },
+
+  strategies: [
+    {
+      title: 'Pocket a hitscan carry',
+      detail:
+        'Damage-boost a hitscan (Sojourn, Ashe, Soldier) — a boosted Sojourn railgun one-shots squishies, and hitscans are easy to keep your beam on.',
+      category: 'damage',
+    },
+    {
+      title: 'Blue-beam damage ults',
+      detail:
+        'Damage-boost an ally’s damage ult — Soldier’s Tactical Visor or Pharah’s Barrage through your beam can wipe a team.',
+      category: 'damage',
+    },
+    {
+      title: 'Valkyrie to initiate',
+      detail:
+        'Open Valkyrie as an initiator so the chained beams damage-boost multiple allies during the push, not just to escape.',
+      category: 'utility',
+    },
+  ],
 };

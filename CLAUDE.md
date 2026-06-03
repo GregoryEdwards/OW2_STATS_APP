@@ -85,6 +85,12 @@ abilities keep per-cast `damage`/`healing` only — per-second is not meaningful
 for an instantaneous cast. The ability table has distinct Dmg / DPS / Heal / HPS
 columns; do not conflate per-hit and per-second.
 
+**Strategies:** each hero has a `strategies[]` array of curated combo/optimization
+tips (`{ title, detail, category }`, category = `healing | damage | utility`),
+shown in the "Combos & Strategies" panel on the profile (`StrategyList`). These
+are sourced from community guides — when editing, prefer concrete, current
+combos and keep each tip to one actionable idea.
+
 Data-integrity tests (`src/data/heroes/heroes.test.ts`) enforce — keep these green:
 - Exactly **12** heroes; ids unique, lowercase, slug-style.
 - Every hero passes `isValidSupportHero` (incl. exactly one `kind:'ultimate'`
@@ -93,6 +99,7 @@ Data-integrity tests (`src/data/heroes/heroes.test.ts`) enforce — keep these g
 - `weapon.dps === computeDps(damage, fireRate)` (= `round2(damage*fireRate)`).
 - A weapon-kind ability's `dps`/`hps`, if present, match the `weapon` block.
 - All per-second values are non-negative.
+- Every hero has ≥2 strategies, each with a non-empty title/detail and a valid category.
 
 **`dataConfidence`:** ability values that are patch-volatile or estimated are
 flagged `'approximate'` (shown as an `approx` badge). Support balance shifts

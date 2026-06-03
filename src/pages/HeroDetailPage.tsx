@@ -4,6 +4,7 @@ import { useCompare } from '@/hooks/useCompare';
 import { HeroPortrait } from '@/components/HeroPortrait';
 import { StatBlock } from '@/components/StatBlock';
 import { AbilityTable } from '@/components/AbilityTable';
+import { StrategyList } from '@/components/StrategyList';
 import { EmptyState } from '@/components/EmptyState';
 import { avgCooldown, minCooldown } from '@/utils/stats';
 
@@ -102,6 +103,14 @@ export function HeroDetailPage() {
         <h2 className="mb-1 text-lg font-semibold text-white">Abilities</h2>
         {hero.healing.notes && <p className="mb-3 text-sm text-slate-400">{hero.healing.notes}</p>}
         <AbilityTable abilities={hero.abilities} />
+      </div>
+
+      <div className="panel p-4">
+        <h2 className="mb-1 text-lg font-semibold text-white">Combos &amp; Strategies</h2>
+        <p className="mb-3 text-sm text-slate-400">
+          Optimization tips and ult combos curated from community guides.
+        </p>
+        <StrategyList strategies={hero.strategies} />
       </div>
 
       <div className="panel p-4">

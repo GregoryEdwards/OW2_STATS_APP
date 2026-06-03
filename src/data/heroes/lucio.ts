@@ -83,4 +83,25 @@ export const lucio: SupportHero = {
     duration: 6,
     effect: 'Grants nearby allies a burst of temporary shields that rapidly decay.',
   },
+
+  strategies: [
+    {
+      title: 'Beat the burst ults',
+      detail:
+        'Drop Sound Barrier early against burst ultimates (D.Va Bomb, Death Blossom, Barrage) — its large temp shield negates the damage.',
+      category: 'utility',
+    },
+    {
+      title: 'Speed in on spent cooldowns',
+      detail:
+        'Speed-boost the team to engage when the enemy blows defensive cooldowns, then swap to heal song once the fight is joined.',
+      category: 'utility',
+    },
+    {
+      title: 'Boop for picks and peel',
+      detail:
+        'Soundwave secures environmental kills (Ilios, Lijiang), displaces divers and interrupts abilities. Env kills grant ult charge equal to the target’s HP.',
+      category: 'damage',
+    },
+  ],
 };

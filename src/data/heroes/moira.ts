@@ -72,4 +72,25 @@ export const moira: SupportHero = {
     duration: 8,
     effect: 'Channels a piercing beam that simultaneously heals allies and damages enemies along its length.',
   },
+
+  strategies: [
+    {
+      title: 'Orb before Coalescence',
+      detail:
+        'Throw a Biotic Orb (heal or damage) right before ulting — it adds free value alongside the Coalescence beam.',
+      category: 'damage',
+    },
+    {
+      title: 'Damage to fuel healing',
+      detail:
+        'Use the damage orb and lock-on beam to refill Biotic Energy — dealing damage is what lets you keep healing.',
+      category: 'healing',
+    },
+    {
+      title: 'Bounce orbs, Fade defensively',
+      detail:
+        'Launch orbs in enclosed spaces so they linger on a target. Save Fade to dodge hooks/flashbangs, and jump as you exit Fade for extra distance.',
+      category: 'utility',
+    },
+  ],
 };

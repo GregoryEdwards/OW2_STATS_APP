@@ -85,4 +85,25 @@ export const lifeweaver: SupportHero = {
     duration: 12,
     effect: 'Spawns a tree that pulses healing and grants an initial burst heal to nearby allies.',
   },
+
+  strategies: [
+    {
+      title: 'Life Grip a focused ally',
+      detail:
+        'Pull a low/focused teammate to safety (they’re immune while travelling). Save it for an actual death — not on someone committing their own ult.',
+      category: 'utility',
+    },
+    {
+      title: 'Petal Platform for angles & escapes',
+      detail:
+        'Lift a DPS to high ground (e.g. Cassidy Deadeye), or drop it under a ground ult (Death Blossom, Terra Surge) to raise the threat out of range.',
+      category: 'damage',
+    },
+    {
+      title: 'Grip → Blossom, Tree to zone',
+      detail:
+        'Follow a Life Grip with a charged Healing Blossom to keep the saved ally alive. Tree of Life both blocks a choke and pumps area healing.',
+      category: 'healing',
+    },
+  ],
 };

@@ -76,4 +76,25 @@ export const kiriko: SupportHero = {
     duration: 7,
     effect: 'Creates a path that increases allied movement speed, attack speed and cooldown recovery.',
   },
+
+  strategies: [
+    {
+      title: 'Kitsune Rush + a DPS ult',
+      detail:
+        'The fox path stacks attack speed and cooldown reduction — pair it with Genji’s Blade, Bastion turret or Soldier’s Visor to turn a DPS into a blender.',
+      category: 'damage',
+    },
+    {
+      title: 'Suzu cancels lethal ults',
+      detail:
+        'Protection Suzu’s brief invuln + cleanse can negate Nano-Blade, Shatter, Death Blossom and anti-heal — but be selective, it’s on a long cooldown.',
+      category: 'utility',
+    },
+    {
+      title: 'Suzu just before Kitsune Rush',
+      detail:
+        'Cast Suzu right before your ult — Kitsune Rush’s cooldown reduction lets you get a second Suzu off during the fight.',
+      category: 'utility',
+    },
+  ],
 };

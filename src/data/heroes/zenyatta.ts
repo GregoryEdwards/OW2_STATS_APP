@@ -74,4 +74,25 @@ export const zenyatta: SupportHero = {
     duration: 6,
     effect: 'Zenyatta becomes invulnerable and massively heals all nearby allies for the duration.',
   },
+
+  strategies: [
+    {
+      title: 'Discord the focus target',
+      detail:
+        'Keep Orb of Discord on whoever your team is shooting — +25% damage taken melts even tanks. Move it as priorities change.',
+      category: 'damage',
+    },
+    {
+      title: 'Charged volley on a discorded squishy',
+      detail:
+        'Charge a five-orb volley behind cover and release it on a discorded target rounding a corner for an instant delete.',
+      category: 'damage',
+    },
+    {
+      title: 'Transcendence beats wipe ults',
+      detail:
+        'Pop Transcendence (huge AoE heal + invuln) when the enemy commits a team-wipe ultimate to neutralize it.',
+      category: 'utility',
+    },
+  ],
 };

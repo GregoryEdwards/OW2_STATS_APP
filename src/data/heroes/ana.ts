@@ -76,4 +76,25 @@ export const ana: SupportHero = {
     duration: 8,
     effect: '+50% damage dealt and -50% damage taken to the target ally, plus an instant heal.',
   },
+
+  strategies: [
+    {
+      title: 'Sleep → Nade → shot → melee',
+      detail:
+        'A landed Sleep Dart sets up the full burst combo (grenade, shot, melee) which can delete a 200 HP target before they wake.',
+      category: 'damage',
+    },
+    {
+      title: 'Anti-heal the enemy, not just heal allies',
+      detail:
+        'Throw Biotic Grenade onto grouped enemies to apply anti-heal — denying enemy sustain usually creates more value than topping up your team.',
+      category: 'utility',
+    },
+    {
+      title: 'Nano a diving carry',
+      detail:
+        'Save Nano Boost for an ally who can convert it — the classic Nano-Blade on Genji is one of the hardest combos to counter. Keep Sleep Dart to interrupt enemy ultimates.',
+      category: 'damage',
+    },
+  ],
 };

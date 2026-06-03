@@ -83,4 +83,25 @@ export const baptiste: SupportHero = {
     duration: 8,
     effect: 'Doubles damage and healing of allied shots fired through the matrix window.',
   },
+
+  strategies: [
+    {
+      title: 'Amp Matrix + hitscan/Bastion',
+      detail:
+        'Amplification Matrix doubles the damage of shots fired through it — coordinate with Soldier, Ashe or Bastion before deploying for a team-wipe window.',
+      category: 'damage',
+    },
+    {
+      title: 'Double your healing through the Matrix',
+      detail:
+        'The Matrix also doubles healing — fire your healing lobs (or an ally Ana grenade) through it to swing a losing fight.',
+      category: 'healing',
+    },
+    {
+      title: 'Hold Immortality for lethal moments',
+      detail:
+        'Don’t burn Immortality Field at fight start. Save it to counter burst ults, and place the device around a corner so enemies can’t shoot it.',
+      category: 'utility',
+    },
+  ],
 };

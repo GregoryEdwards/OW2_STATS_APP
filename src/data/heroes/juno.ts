@@ -88,4 +88,25 @@ export const juno: SupportHero = {
     duration: 9,
     effect: 'Deploys a moving zone that heals allies and increases their damage dealt.',
   },
+
+  strategies: [
+    {
+      title: 'Orbital Ray on the commit',
+      detail:
+        'Drop Orbital Ray as your team pushes — it heals and amplifies allied damage (~35%) for a fight-ending window.',
+      category: 'damage',
+    },
+    {
+      title: 'Hyper Ring your tank in',
+      detail:
+        'Cast Hyper Ring in front of a brawl/dive tank (Rein, Winston, Ball) to launch a fast engage — you get the speed boost first.',
+      category: 'utility',
+    },
+    {
+      title: 'Torpedoes for multi-target burst',
+      detail:
+        'Lock Pulsar Torpedoes across several allies for burst healing, or onto a low enemy to finish them — but you’re locked while channeling, so cast from safety.',
+      category: 'healing',
+    },
+  ],
 };

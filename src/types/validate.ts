@@ -68,5 +68,13 @@ export function isValidSupportHero(value: unknown): value is SupportHero {
   if (!ult || !isNonEmptyString(ult.name) || !isNonNegativeNumber(ult.cost)) return false;
   if (ultimates[0].ultCost !== undefined && ultimates[0].ultCost !== ult.cost) return false;
 
+  // Strategies
+  if (!Array.isArray(h.strategies) || h.strategies.length === 0) return false;
+  const validCategories = ['healing', 'damage', 'utility'];
+  for (const s of h.strategies as Array<Record<string, unknown>>) {
+    if (!isNonEmptyString(s.title) || !isNonEmptyString(s.detail)) return false;
+    if (!validCategories.includes(s.category as string)) return false;
+  }
+
   return true;
 }

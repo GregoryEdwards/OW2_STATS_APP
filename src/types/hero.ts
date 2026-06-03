@@ -103,6 +103,20 @@ export interface Ultimate {
   duration?: number;
 }
 
+/** Whether a strategy primarily optimizes healing output, damage, or utility. */
+export type StrategyCategory = 'healing' | 'damage' | 'utility';
+
+/**
+ * An actionable combo or optimization tip for a hero, curated from community
+ * guides. Surfaced on the hero profile so players can see how to get the most
+ * healing/damage out of the kit.
+ */
+export interface Strategy {
+  title: string;
+  detail: string;
+  category: StrategyCategory;
+}
+
 export interface SupportHero {
   /** Slug id, e.g. "ana", "lucio", "wuyang". */
   id: string;
@@ -121,4 +135,6 @@ export interface SupportHero {
   /** Full kit. Always includes the ultimate (kind: 'ultimate'). */
   abilities: Ability[];
   ultimate: Ultimate;
+  /** Curated combos / optimization tips shown on the hero profile. */
+  strategies: Strategy[];
 }

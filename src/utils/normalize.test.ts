@@ -14,6 +14,7 @@ const hero = (id: string, dps: number, ultCost: number): SupportHero => ({
   healing: { primaryType: 'beam', peakHps: 50 },
   abilities: [{ name: 'Ult', kind: 'ultimate', description: '', ultCost }],
   ultimate: { name: 'Ult', cost: ultCost, effect: '' },
+  strategies: [],
 });
 
 describe('normalizeMetric', () => {
